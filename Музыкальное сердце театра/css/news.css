@@ -390,6 +390,7 @@ body {
 }
 
 .section-news {
+  margin-top: 3.75rem;
   position: relative;
   z-index: 1;
 }

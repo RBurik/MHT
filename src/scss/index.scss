@@ -11,7 +11,7 @@
 @import '_newsSlider';
 
 .main {
-  padding-top: 5.625rem;
+  // padding-top: 5.625rem;
   position: relative;
 
   .slickArrow {
@@ -194,6 +194,7 @@
   }
 
   .section-title {
+    margin-top: 6.25rem;
     margin-bottom: $six;
   }
 

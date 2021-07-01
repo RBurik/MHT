@@ -830,7 +830,6 @@ h1,
 }
 
 .main {
-  padding-top: 5.625rem;
   position: relative;
 }
 
@@ -1045,6 +1044,7 @@ h1,
 }
 
 .section-offer .section-title {
+  margin-top: 6.25rem;
   margin-bottom: 3.75rem;
 }
 
