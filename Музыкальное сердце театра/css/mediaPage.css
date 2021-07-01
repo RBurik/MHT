@@ -354,6 +354,7 @@ body {
 }
 
 .section-content {
+  margin-top: 6rem;
   position: relative;
   z-index: 1;
 }
@@ -541,7 +542,7 @@ body {
   margin-bottom: 2.5rem;
 }
 
-.section-content .video .filter-result .card img.vid-preview {
+.section-content .video .filter-result .card iframe {
   width: 100%;
   height: 14.75rem;
 }

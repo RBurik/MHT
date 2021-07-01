@@ -7,6 +7,7 @@ body {
 }
 
 .section-content {
+  margin-top: 6rem;
   position: relative;
   z-index: 1;
 
@@ -56,6 +57,19 @@ body {
     h2.nav-content-title {
       @include fontStyle (2.625rem, 3rem, .05em, 700);
       margin-bottom: $six;
+    }
+  }
+
+  ul.bulleted-list {
+    @include fontStyle (1.125rem, 2.375rem, .01em);
+    padding-left: $three;
+
+    &:not(:last-child) {
+      margin: 0 0 $six 0;
+    }
+
+    &:last-child {
+      margin-bottom: 0;
     }
   }
 

@@ -697,8 +697,11 @@ h1,
   position: absolute;
   z-index: 100;
   top: 20.75rem;
-  width: 2.5rem;
   height: 4.375rem;
+}
+
+.main .slickArrow img {
+  width: 2.5rem;
 }
 
 .main .slickArrow.slickPrev {
@@ -714,7 +717,7 @@ h1,
 
 .sliderMain-heading {
   position: relative;
-  z-index: 1;
+  z-index: 2;
   padding-top: 6rem;
   padding-bottom: 20.9375rem;
 }
@@ -768,7 +771,7 @@ h1,
 
 .sliderMain-content {
   position: relative;
-  z-index: 2;
+  z-index: 1;
   margin-top: -50.5rem;
   margin-left: 21.5625rem;
 }
@@ -892,10 +895,13 @@ h1,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .section-offer .inner {
-  width: 36.5625rem;
+  width: 56.5625rem;
 }
 
 .section-offer .section-title {
@@ -928,7 +934,60 @@ h1,
 }
 
 .section-offer .img-col {
-  width: 52.4375rem;
+  width: 37.4375rem;
   position: absolute;
   right: 0;
+}
+
+.section-offer1 {
+  position: relative;
+}
+
+.section-offer1 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.section-offer1 .inner {
+  width: 56.5625rem;
+  margin-left: auto;
+}
+
+.section-offer1 .section-title {
+  margin-bottom: 3.75rem;
+}
+
+.section-offer1 p.paragraph {
+  font-size: 1.125rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  margin-top: 0;
+}
+
+.section-offer1 p.paragraph:nth-child(2) {
+  margin-bottom: 1.875rem;
+}
+
+.section-offer1 p.paragraph:nth-child(3) {
+  margin-bottom: 3.75rem;
+}
+
+.section-offer1 .btn-primary {
+  display: inline-block;
+  padding: 1.1875rem 3.75rem 1.125rem 3.75rem;
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+}
+
+.section-offer1 .img-col {
+  width: 37.4375rem;
+  position: absolute;
+  left: 0;
 }

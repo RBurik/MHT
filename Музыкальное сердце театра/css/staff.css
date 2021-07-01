@@ -354,6 +354,7 @@ body {
 }
 
 .section-content {
+  margin-top: 6rem;
   position: relative;
   z-index: 1;
 }
@@ -519,6 +520,22 @@ body {
   background: linear-gradient(138.95deg, #BBA151 -28.75%, #F4DE9D 60.24%, #E3C877 76.72%);
   margin-top: -1.3125rem;
   margin-right: 2.375rem;
+}
+
+.section-content ul.bulleted-list {
+  font-size: 1.125rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  padding-left: 1.875rem;
+}
+
+.section-content ul.bulleted-list:not(:last-child) {
+  margin: 0 0 3.75rem 0;
+}
+
+.section-content ul.bulleted-list:last-child {
+  margin-bottom: 0;
 }
 
 .section-content .filter-result {
