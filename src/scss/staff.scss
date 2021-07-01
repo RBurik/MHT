@@ -58,6 +58,7 @@ body {
 
     .nav-content-title {
       @include fontStyle (2.625rem, 3rem, .05em, 700);
+      text-align: center;
       margin-top: 0;
       margin-bottom: $six;
     }
