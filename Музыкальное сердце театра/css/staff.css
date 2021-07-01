@@ -174,14 +174,11 @@ h1,
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1.125rem;
-}
-
-.header .nav-item:not(:last-child) {
   margin-right: .25rem;
   position: relative;
 }
 
-.header .nav-item:not(:last-child):before {
+.header .nav-item:before {
   content: '';
   position: absolute;
   left: 0;
@@ -197,7 +194,7 @@ h1,
   transition: .25s;
 }
 
-.header .nav-item:not(:last-child):hover:before {
+.header .nav-item:hover:before {
   opacity: .1;
 }
 
@@ -629,4 +626,58 @@ body {
   font-weight: 400;
   opacity: .25;
   text-decoration: underline;
+}
+
+.section-content .expert .cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+.section-content .expert .cards .card {
+  width: calc(100% / 3 - (1.875rem * 2) / 3);
+}
+
+.section-content .expert .cards .card img.portrait {
+  width: 100%;
+  margin-bottom: 1.875rem;
+}
+
+.section-content .expert .cards .card p.name {
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin: 0 0 1.25rem 0;
+}
+
+.section-content .expert .cards .card p.name,
+.section-content .expert .cards .card p.post {
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  margin: 0 0 1.25rem 0;
+}
+
+.section-content .expert .cards .card a.mail {
+  font-size: 1.125rem;
+  line-height: 1.875rem;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  margin: 0;
+  opacity: .25;
+  text-decoration: underline;
+}
+
+.section-content .expert .cards .card:not(:nth-child(3n)) {
+  margin-right: 1.875rem;
+}
+
+.section-content .expert .cards .card:not(:nth-last-child(3)):not(:nth-last-child(2)):not(:last-child) {
+  margin-bottom: 2.5rem;
 }

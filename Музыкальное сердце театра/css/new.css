@@ -174,14 +174,11 @@ h1,
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1.125rem;
-}
-
-.header .nav-item:not(:last-child) {
   margin-right: .25rem;
   position: relative;
 }
 
-.header .nav-item:not(:last-child):before {
+.header .nav-item:before {
   content: '';
   position: absolute;
   left: 0;
@@ -197,7 +194,7 @@ h1,
   transition: .25s;
 }
 
-.header .nav-item:not(:last-child):hover:before {
+.header .nav-item:hover:before {
   opacity: .1;
 }
 
@@ -641,6 +638,38 @@ body {
 
 .section-content .rightCol {
   display: block;
+}
+
+.section-content ol.numerous-list {
+  font-size: 1.125rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  padding-left: 1.875rem;
+}
+
+.section-content ol.numerous-list:not(:last-child) {
+  margin: 0 0 3.75rem 0;
+}
+
+.section-content ol.numerous-list:last-child {
+  margin-bottom: 0;
+}
+
+.section-content ul.bulleted-list {
+  font-size: 1.125rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  padding-left: 1.875rem;
+}
+
+.section-content ul.bulleted-list:not(:last-child) {
+  margin: 0 0 3.75rem 0;
+}
+
+.section-content ul.bulleted-list:last-child {
+  margin-bottom: 0;
 }
 
 .section-content .gallery {

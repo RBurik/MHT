@@ -192,4 +192,44 @@ body {
       text-decoration: underline;
     }
   }
+
+  .expert .cards {
+    display: flex;
+    flex-flow: row wrap;
+
+    .card {
+      width: calc(100% / 3 - (1.875rem * 2) / 3);
+
+      img.portrait {
+        width: 100%;
+        margin-bottom: $three;
+      }
+
+      p.name {
+        @include fontStyle (1.125rem, 1.875rem, .05em, 700);
+        margin: 0 0 $two 0;
+      }
+
+      p.name,
+      p.post {
+        @include fontStyle (1.125rem, 1.875rem, .05em);
+        margin: 0 0 $two 0;
+      }
+
+      a.mail {
+        @include fontStyle (1.125rem, 1.875rem, .05em);
+        margin: 0;
+        opacity: .25;
+        text-decoration: underline;
+      }
+
+      &:not(:nth-child(3n)) {
+        margin-right: $three;
+      }
+
+      &:not(:nth-last-child(3)):not(:nth-last-child(2)):not(:last-child) {
+        margin-bottom: $four;
+      }
+    }
+  }
 }

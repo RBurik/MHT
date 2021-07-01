@@ -174,14 +174,11 @@ h1,
       -ms-flex-align: center;
           align-items: center;
   padding: 0 1.125rem;
-}
-
-.header .nav-item:not(:last-child) {
   margin-right: .25rem;
   position: relative;
 }
 
-.header .nav-item:not(:last-child):before {
+.header .nav-item:before {
   content: '';
   position: absolute;
   left: 0;
@@ -197,7 +194,7 @@ h1,
   transition: .25s;
 }
 
-.header .nav-item:not(:last-child):hover:before {
+.header .nav-item:hover:before {
   opacity: .1;
 }
 
@@ -562,7 +559,6 @@ body {
   top: 0;
   left: 0;
   width: 100%;
-  height: 100%;
 }
 
 .section-news .new p,
