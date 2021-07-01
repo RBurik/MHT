@@ -2,8 +2,58 @@
 @import '_variables';
 @import '_style';
 
+@import '_label';
+
 body {
   background: linear-gradient(90deg, rgba($blue, .25) 0%, rgba($red, .25) 100%);
+}
+
+.main {
+  margin-top: 8.75rem;
+  margin-bottom: $six;
+
+  .wrapper {
+    position: relative;
+    background-image: url('../img/novat-1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: $six 32.8125rem $six 6.5625rem;
+
+    &:before {
+      content: '';
+      width: 100%;
+      height: $two;
+      position: absolute;
+      top: -$two;
+      left: 0;
+      background: $red;
+    }
+
+    &:after {
+      content: '';
+      width: 100%;
+      height: 100%;
+      background: rgba($color: #000000, $alpha: .7);
+      position: absolute;
+      z-index: 0;
+      top: 0;
+      left: 0;
+    }
+  }
+
+  .title {
+    position: relative;
+    z-index: 1;
+    margin-bottom: $three;
+  }
+
+  p.text {
+    position: relative;
+    z-index: 1;
+    @include fontStyle (1.125rem, 2.375rem, .01em);
+    margin: 0;
+  }
 }
 
 .section-content {
@@ -221,16 +271,18 @@ body {
     position: relative;
     width: calc(100% / 2 - 2.8125rem / 2);
 
-    &:before {
-      content: '';
-      width: 100%;
-      height: 15.4375rem;
-      background: $blueRed;
-      opacity: .52;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
+    // ВКЛЮЧИТЬ, КОГДА БУДУТ ГОТОВЫ ИЗОБРАЖЕНИЯ
+
+    // &:before {
+    //   content: '';
+    //   width: 100%;
+    //   height: 15.4375rem;
+    //   background: $blueRed;
+    //   opacity: .52;
+    //   position: absolute;
+    //   top: 0;
+    //   left: 0;
+    // }
 
     &:not(:last-child):not(:nth-last-child(2)) {
       margin-bottom: $four;

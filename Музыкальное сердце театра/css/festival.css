@@ -225,12 +225,13 @@ h1,
   -webkit-box-direction: normal;
       -ms-flex-flow: column wrap;
           flex-flow: column wrap;
-  height: 23.75rem;
+  height: 14.75rem;
   margin-bottom: 7.5rem;
 }
 
 .footer a.logo {
   margin-right: 6.5625rem;
+  height: 100%;
 }
 
 .footer a.logo img {
@@ -347,10 +348,96 @@ h1,
   opacity: .25;
 }
 
+.windowLabel {
+  width: 100%;
+  padding: 1rem 7.375rem;
+  position: relative;
+  background: -o-radial-gradient(100% 7.27%, 180.91% 1388.43%, #770D37 0%, #211452 100%);
+  background: radial-gradient(180.91% 1388.43% at 100% 7.27%, #770D37 0%, #211452 100%);
+}
+
+.windowLabel:before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-image: url("../img/BGlabel.png");
+}
+
+.windowLabel p.update {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+  letter-spacing: 0.05em;
+  font-weight: 700;
+  margin: 0 0 .625rem 0;
+}
+
+.windowLabel p.desc {
+  font-size: 0.875rem;
+  line-height: 0.875rem;
+  letter-spacing: 0.05em;
+  font-weight: 400;
+  margin: 0;
+  opacity: .32;
+}
+
 body {
   background: -webkit-gradient(linear, left top, right top, from(rgba(33, 20, 82, 0.25)), to(rgba(119, 13, 55, 0.25)));
   background: -o-linear-gradient(left, rgba(33, 20, 82, 0.25) 0%, rgba(119, 13, 55, 0.25) 100%);
   background: linear-gradient(90deg, rgba(33, 20, 82, 0.25) 0%, rgba(119, 13, 55, 0.25) 100%);
+}
+
+.main {
+  margin-top: 8.75rem;
+  margin-bottom: 3.75rem;
+}
+
+.main .wrapper {
+  position: relative;
+  background-image: url("../img/novat-1.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 3.75rem 32.8125rem 3.75rem 6.5625rem;
+}
+
+.main .wrapper:before {
+  content: '';
+  width: 100%;
+  height: 1.25rem;
+  position: absolute;
+  top: -1.25rem;
+  left: 0;
+  background: #770D37;
+}
+
+.main .wrapper:after {
+  content: '';
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  position: absolute;
+  z-index: 0;
+  top: 0;
+  left: 0;
+}
+
+.main .title {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.875rem;
+}
+
+.main p.text {
+  position: relative;
+  z-index: 1;
+  font-size: 1.125rem;
+  line-height: 2.375rem;
+  letter-spacing: 0.01em;
+  font-weight: 400;
+  margin: 0;
 }
 
 .section-content {
@@ -626,19 +713,6 @@ body {
 .section-content .lab {
   position: relative;
   width: calc(100% / 2 - 2.8125rem / 2);
-}
-
-.section-content .nominee:before,
-.section-content .lab:before {
-  content: '';
-  width: 100%;
-  height: 15.4375rem;
-  background: -o-radial-gradient(100% 7.27%, 180.91% 1388.43%, #770D37 0%, #211452 100%);
-  background: radial-gradient(180.91% 1388.43% at 100% 7.27%, #770D37 0%, #211452 100%);
-  opacity: .52;
-  position: absolute;
-  top: 0;
-  left: 0;
 }
 
 .section-content .nominee:not(:last-child):not(:nth-last-child(2)),

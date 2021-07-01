@@ -2,6 +2,8 @@
 @import '_variables';
 @import '_style';
 
+@import '_label';
+
 body {
   background: linear-gradient(90deg, rgba($blue, .25) 0%, rgba($red, .25) 100%);
 }
@@ -344,7 +346,7 @@ body {
 
     img {
       margin-bottom: $six;
-      width: 100%
+      height: 10rem
     }
 
     .partner-title {

@@ -178,12 +178,14 @@ h1,
   .wrapper {
     display: flex;
     flex-flow: column wrap;
-    height: 23.75rem;
+    // height: 23.75rem;
+    height: 14.75rem;
     margin-bottom: $twelve;
   }
 
   a.logo {
     margin-right: 6.5625rem;
+    height: 100%;
 
     img {
       width: 13.125rem;

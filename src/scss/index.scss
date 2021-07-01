@@ -2,6 +2,10 @@
 @import '_variables';
 @import '_style';
 
+@import '_label';
+
+@import '_slick';
+
 // Templates
 @import '_posters';
 @import '_newsSlider';
@@ -156,7 +160,6 @@
 }
 
 .section-live {
-  background-image: url('../img/live.jpg');
   background-position: center;
   height: 28.5rem;
 
@@ -168,14 +171,13 @@
   }
 
   .section-title {
-    margin: $six 0 0 0;
+    margin: $six 0 $two 0;
     display: inline-block;
   }
 
-  img.play {
-    width: 2.625rem;
-    display: inline-block;
-    margin-top: 7.6875rem;
+  iframe {
+    width: 100%;
+    height: 100%;
   }
 }
 
