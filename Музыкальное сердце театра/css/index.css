@@ -921,7 +921,7 @@ h1,
   width: 39.375rem;
   min-height: 50.5rem;
   max-height: 50.5rem;
-  padding: 8.9375rem 2.5rem 3.75rem 2.5rem;
+  padding: 3.75rem 2.5rem;
 }
 
 .sliderMain-content .slide .content:before {
@@ -936,7 +936,7 @@ h1,
 
 .sliderMain-content .slide .content .imgContainer {
   width: 100%;
-  height: 12.0625rem;
+  height: 24.0625rem;
   margin-bottom: 3.125rem;
   background-size: cover;
   background-position: center;

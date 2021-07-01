@@ -90,7 +90,8 @@
       width: 39.375rem;
       min-height: 50.5rem;
       max-height: 50.5rem;
-      padding: 8.9375rem $four $six $four;
+      // padding: 8.9375rem $four $six $four;
+      padding: $six $four;
 
       &:before {
         content: '';
@@ -104,7 +105,8 @@
 
       .imgContainer {
         width: 100%;
-        height: 12.0625rem;
+        // height: 12.0625rem;
+        height: 24.0625rem;
         margin-bottom: 3.125rem;
         background-size: cover;
         background-position: center;
