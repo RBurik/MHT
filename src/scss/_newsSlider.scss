@@ -51,6 +51,7 @@
     position: relative;
     padding: $four $four 0 $four;
     max-height: 17.8125rem;
+    height: 17.8125rem;
     overflow: hidden;
 
     img {
@@ -81,6 +82,9 @@
       margin: 0;
       @include fontStyle (1rem, 1.625rem, inherit);
       opacity: .5;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     &:first-child {

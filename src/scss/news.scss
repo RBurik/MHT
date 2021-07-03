@@ -169,6 +169,9 @@ body {
       @include fontStyle (1rem, 1.625rem, 0);
       opacity: .5;
       margin: 0;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
 
     &:not(:last-child):not(:nth-last-child(2)) {

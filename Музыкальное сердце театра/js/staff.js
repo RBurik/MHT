@@ -40,4 +40,18 @@ $('aside button').on("click", function() {
 //   $('.academics .filter-result').eq($tagIndex).css('display', 'flex');
 // })
 
+  // ПРИЕМ ДАННЫХ
+
+var data = sessionStorage.getItem('index');
+
+for(var i = 0; i < $('aside button').length; i++) {
+  $('aside button').eq(i).removeClass('active');
+}
+$('aside button').eq(data).addClass('active');
+
+for(var i = 0; i < $('.nav-content').length; i++) {
+  $('.nav-content').eq(i).addClass('hidden');
+}
+$('.nav-content').eq(data).removeClass('hidden');
+
 })

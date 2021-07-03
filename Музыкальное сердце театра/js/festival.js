@@ -59,13 +59,13 @@ $('.nominee .text').on("click", function() {
 
 // Start Value
 for (let i = 0; i < $('.laboratory .filter-result').length; i++) {
-$('.laboratory .filter-result').eq(i).css('display', 'none');
+  $('.laboratory .filter-result').eq(i).css('display', 'none');
 }
 $('.laboratory .filter-result').eq(0).css('display', 'flex');
 
 $('.laboratory .filter .text').on("click", function() {
-$(this).next().slideToggle(150);
-$(this).toggleClass('active');
+  $(this).next().slideToggle(150);
+  $(this).toggleClass('active');
 })
 
 $('.laboratory .filter button').on("click", function() {
@@ -94,4 +94,17 @@ $('.lab .text').on("click", function() {
   $(this).toggleClass('active');
 })
 
+  // ПРИЕМ ДАННЫХ
+
+var data = sessionStorage.getItem('index');
+
+for(var i = 0; i < $('aside button').length; i++) {
+  $('aside button').eq(i).removeClass('active');
+}
+$('aside button').eq(data).addClass('active');
+
+for(var i = 0; i < $('.nav-content').length; i++) {
+  $('.nav-content').eq(i).addClass('hidden');
+}
+$('.nav-content').eq(data).removeClass('hidden');
 })

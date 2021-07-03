@@ -591,6 +591,10 @@ body {
   font-weight: 400;
   opacity: .5;
   margin: 0;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+     text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .section-news .new:not(:last-child):not(:nth-last-child(2)) {

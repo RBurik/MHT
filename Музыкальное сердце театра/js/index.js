@@ -100,4 +100,11 @@ $(document).ready(function () {
     }
     $('.filter-result').eq($tagIndex).css('display', 'block');
   })
+
+    // ПЕРЕНОС ДАННЫХ
+
+  $('.sliderMain-heading a').on("click", function() {
+    sessionStorage.setItem('index', $(this).attr('data-index'));
+  })
+
 })

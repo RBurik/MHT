@@ -278,7 +278,7 @@ body {
         width: .6875rem;
       }
 
-      &:not(:nth-child(4n)) {
+      &:not(:last-child) {
         margin-right: $two;
       }
 

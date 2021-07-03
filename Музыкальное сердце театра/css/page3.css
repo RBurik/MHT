@@ -724,7 +724,7 @@ body {
   width: .6875rem;
 }
 
-.section-content .documents .cards a:not(:nth-child(4n)) {
+.section-content .documents .cards a:not(:last-child) {
   margin-right: 1.25rem;
 }
 
