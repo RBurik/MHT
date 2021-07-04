@@ -86,8 +86,18 @@ body {
     }
   }
 
+  .photo .cards {
+    display: flex;
+    flex-flow: row wrap;
+  }
+
   .card {
+    width: calc(100% / 3 - (1.875rem * 2) / 3);
     margin-bottom: $four;
+
+    &:not(:nth-child(3n)) {
+      margin-right: 1.875rem;
+    }
 
     img {
       width: 100%;
