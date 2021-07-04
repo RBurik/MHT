@@ -706,6 +706,10 @@ body {
           justify-content: space-between;
 }
 
+.section-content .laboratory h3 {
+  text-align: left;
+}
+
 .section-content .nominee,
 .section-content .lab {
   position: relative;

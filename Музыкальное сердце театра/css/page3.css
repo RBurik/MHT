@@ -456,6 +456,10 @@ body {
   margin-bottom: 3.75rem;
 }
 
+.section-content .contacts h3 {
+  text-align: left;
+}
+
 .section-content p.paragraph {
   font-size: 1.125rem;
   line-height: 2.375rem;
@@ -752,7 +756,7 @@ body {
 }
 
 .section-content .manage .cards .card p.name {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
   line-height: 1.875rem;
   letter-spacing: 0.05em;
   font-weight: 700;
@@ -761,11 +765,14 @@ body {
 
 .section-content .manage .cards .card p.name,
 .section-content .manage .cards .card p.post {
+  margin: 0 0 1.25rem 0;
+}
+
+.section-content .manage .cards .card p.post {
   font-size: 1.125rem;
   line-height: 1.875rem;
   letter-spacing: 0.05em;
   font-weight: 400;
-  margin: 0 0 1.25rem 0;
 }
 
 .section-content .manage .cards .card a.mail {
