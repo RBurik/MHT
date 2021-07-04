@@ -527,6 +527,16 @@ body {
 .section-news .new {
   position: relative;
   height: 17.8125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   overflow: hidden;
   padding: 2.5rem 2.5rem 0 2.5rem;
 }

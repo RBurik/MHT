@@ -53,6 +53,9 @@
     max-height: 17.8125rem;
     height: 17.8125rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 
     img {
       position: absolute;

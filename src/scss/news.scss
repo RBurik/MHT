@@ -117,6 +117,9 @@ body {
   .new {
     position: relative;
     height: 17.8125rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     overflow: hidden;
     padding: $four $four 0 $four;
 
