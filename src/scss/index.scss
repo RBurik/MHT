@@ -134,9 +134,6 @@
   .slide {
     position: relative;
     height: 13.5rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
 
     &:before {
       content: '';
