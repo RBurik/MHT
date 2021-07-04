@@ -125,6 +125,10 @@ body {
 
     &:first-child {
       width: 100%;
+
+      img {
+        top: -50%;
+      }
     }
 
     &:not(:first-child) {

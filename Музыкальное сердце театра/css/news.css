@@ -545,6 +545,10 @@ body {
   width: 100%;
 }
 
+.section-news .new:first-child img {
+  top: -50%;
+}
+
 .section-news .new:not(:first-child) {
   width: calc(100% / 2 - 1.5625rem / 2);
 }
