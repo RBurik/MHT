@@ -388,6 +388,9 @@ body {
     width: calc(100% / 2 - 1.5625rem / 2);
     height: 17.8125rem;
     overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     padding: $four $four 0 $four;
 
     &:after {
