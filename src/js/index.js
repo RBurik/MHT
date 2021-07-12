@@ -3,10 +3,11 @@ $(document).ready(function () {
     // SLIDER INIT
     
   $('.sliderMain-heading').slick({
+    draggable: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    speed: 250,
+    speed: 400,
     mobileFirst: true,
     infinite: true,
     centerMode: true, 
@@ -20,10 +21,11 @@ $(document).ready(function () {
   });
 
   $('.sliderMain-content').slick({
+    draggable: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    speed: 250,
+    speed: 400,
     mobileFirst: true,
     infinite: true,
     fade: true,
@@ -36,10 +38,11 @@ $(document).ready(function () {
   });
 
   $('.sliderMain-nav').slick({
-    slidesToShow: 8,
+    draggable: false,
+    slidesToShow: 5,
     slidesToScroll: 1,
     arrows: false,
-    speed: 250,
+    speed: 400,
     mobileFirst: true,
     infinite: true,
     responsive: [
