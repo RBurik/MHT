@@ -3,7 +3,6 @@ $(document).ready(function () {
     // SLIDER INIT
     
   $('.sliderMain-heading').slick({
-    draggable: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
@@ -12,6 +11,7 @@ $(document).ready(function () {
     infinite: true,
     centerMode: true, 
     centerPadding: '15rem',
+    asNavFor: '.sliderMain-content, .sliderMain-nav',
     responsive: [
       {
         breakpoint: 4000,
